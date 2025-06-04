@@ -13,8 +13,6 @@ $(function(){
         const css = $('.iframe-editor[data-editor="css"] div').html()
         const js = $('.iframe-editor[data-editor="js"] div').html()
 
-        $('.iframe-editor[data-editor="html"] div').html(html.replace(/(<[^>]+>)/g, '<span style="color:#333 !important">$1</span>'));
-
         const content = `
         <!DOCTYPE html>
         <html>
