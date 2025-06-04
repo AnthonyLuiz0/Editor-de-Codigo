@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/index.style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de Codigos</title>
+</head>
+<body>
+    <div class="main-content">
+        <div class="editor">
+            <div class="tab-menu">
+                <span class="tab-item tab-selected" data-editor="html">
+                    <i class="icon html-icon" data-lucide="code-xml"></i>
+                    HTML
+                </span>
+                <span class="tab-item" data-editor="css">
+                    <i class="icon css-icon" data-lucide="parentheses"></i>
+                    CSS
+                </span>
+                <span class="tab-item" data-editor="js">
+                    <i class="icon js-icon" data-lucide="braces"></i>
+                    JavaScript/JQuery
+                </span>
+            </div>
+            <div class="iframe-editor html-editor" data-editor="html">
+                <div spellcheck="false" name="html" id="" contenteditable="true"></div>
+            </div>
+            <div class="iframe-editor css-editor" data-editor="css">
+                <div spellcheck="false" name="css" id="" contenteditable="true"></div>
+            </div>
+            <div class="iframe-editor js-editor" data-editor="js">
+                <div spellcheck="false" name="js" id="" contenteditable="true"></div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="output">
+            <span class="tab">Preview</span>
+            <iframe src=""></iframe>
+        </div>
+    </div>
+    <script src="assets/index.script.js"></script>
+    <div class="footer">
+        <p>Desenvolvido por <a href="https://github.com/AnthonySilva0">Anthony Luiz</a></p>
+    </div>
+</body>
+</html>
